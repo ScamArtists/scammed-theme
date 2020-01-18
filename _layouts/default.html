@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en" }}">
+	<head>
+		<meta name="viewport" content="width=device-width initial-scale=1">
+		<meta charset="UTF-8">
+		<title>{% if page.title %}{{ page.title | append: " | " }}{% endif %}{{ site.title }}</title>
+		<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	</head>
+	<body>
+		<header>
+			<h1>{{ site.title | default: site.github.repository_name }}</h1>
+			<h2>{{ site.description | default: site.github.project_tagline }}</h2>
+		</header>
+		<section>
+			{{ content }}
+		</section>
+	</body>
+</html>

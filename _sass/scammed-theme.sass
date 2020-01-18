@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900&display=swap")
+
+// Colours
+$background: #333638
+$section-background: #d3dcf1
+$header-background: #6e95ef
+$highlight: #5ebeff
+
+*, *::before, *::after
+  color: #000
+  font: 100% Lato, sans-serif
+  font-weight: 400
+
+  box-sizing: border-box
+  margin: 0
+  border: 0
+  padding: 0
+
+body
+  width: 100%
+  background-color: $background
+
+header, section
+  display: block
+
+header
+  width: 100%
+  background-color: $header-background
+  padding: 1em
+
+  h1
+    font-size: 4em
+    color: #fff
+  h2
+    font-size: 1.7em
+    font-weight: 400
+    color: #fff
+    margin-left: 1.5em
+
+section
+  width: calc(100% - 2em)
+  margin: 1em
+  padding: 1em
+
+  border-radius: 5px
+  background-color: $section-background
+
+%header
+  font-weight: 900
+
+h1
+  @extend %header
+  font-size: 2em
+h2
+  @extend %header
+  font-size: 1.8em
+h3
+  @extend %header
+  font-size: 1.6em
+h4
+  @extend %header
+  font-size: 1.4em
+h5
+  @extend %header
+  font-size: 1.2em
+h6
+  @extend %header
+  font-size: 1em
+
+a
+  color: $highlight
+  text-decoration: underline
+
+strong
+  font-weight: bold
+
+em
+  font-style: italic
+
+strong em, em strong
+  font-style: italic
+  font-weight: bold
